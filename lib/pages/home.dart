@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-
-class Task {
-  String title;
-  bool done;
-
-  Task(this.title, this.done);
-}
+import 'package:newapp/models/task.dart';
+import 'task_details.dart';
+import 'task_duration.dart';
+import 'dart:async';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -40,7 +37,12 @@ class _HomePageState extends State<HomePage> {
                 if(!task.done) ...{
                   ListTile(
                     onTap: () {
-                      // Add your onPressed logic here!
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => TimerPage(task: task),
+                        ),
+                      );
                     },
                     leading: Transform.scale(
                       scale: 0.9,
@@ -75,32 +77,6 @@ class _HomePageState extends State<HomePage> {
                 },
               ],
             ),
-          // ListTile(
-          //   onTap: () {},
-          //   leading: Transform.scale(
-          //     scale: 0.9,
-          //     child: Checkbox(
-          //       shape: RoundedRectangleBorder(
-          //         borderRadius: BorderRadius.circular(10),
-          //       ),
-          //       value: false,
-          //       onChanged: (value) {},
-          //     ),
-          //   ),
-          // ),
-          // const Divider(
-          //   height: 1,
-          //   thickness: 1,
-          //   indent: 20,
-          // ),
-          // if (!isAddingTask) ...[
-          //   buildTaskTextField(),
-          //   const Divider(
-          //     height: 1,
-          //     thickness: 1,
-          //     indent: 20,
-          //   ),
-          // ],
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -152,10 +128,10 @@ class _HomePageState extends State<HomePage> {
 AppBar appBar() {
   return AppBar(
     title: const Text(
-      'GetShitDone',
+      'Wyrd',
       style: TextStyle(
         color: Colors.white,
-        fontSize: 18,
+        fontSize: 14,
       ),
     ),
     backgroundColor: Colors.black,
@@ -165,7 +141,8 @@ AppBar appBar() {
 
 header() {
   return Container(
-    padding: EdgeInsets.all(32),
+    // padding: EdgeInsets.all(20),
+    padding: EdgeInsets.only(left: 20, right: 20, bottom: 30),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -173,7 +150,7 @@ header() {
           'Hi Sid,',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 32,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -182,7 +159,7 @@ header() {
           '12 January, 2024',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -206,10 +183,10 @@ subheader() {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Today',
+          'Tasks',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -217,4 +194,3 @@ subheader() {
     ),
   );
 }
-

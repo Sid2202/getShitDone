@@ -1,0 +1,146 @@
+[
+    {
+      "chart id": "HED_DEMO-20240212-00001",
+      "data": {
+        "resourceType": "MeasureReport",
+        "meta": {
+          "source": "http://example.org/fhir/server",
+          "profile": ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm"]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-submitDataUpdateType",
+            "valueCode": "incremental"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://datycs.com/chart",
+            "value": "HED_DEMO-20240212-00001"
+          }
+        ],
+        "status": "complete",
+        "type": "data-collection",
+        "measure": "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-exm130-example",
+        "subject": {
+          "reference": "Patient/22e4d180ebb7d5b6d7a214904a2f229ec997fbfcfd445587f299400f8b56ac9d"
+        },
+        "period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "evaluatedResource": [
+          {"reference": "Condition/1"},
+          {"reference": "Condition/1"},
+          {"reference": "Condition/1"},
+          {"reference": "Diagnostic/1122"}
+        ]
+      }
+    },
+    {
+      "chart id": "HED_DEMO-20240212-00002",
+      "data": {
+        "resourceType": "MeasureReport",
+        "meta": {
+          "source": "http://example.org/fhir/server",
+          "profile": ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm"]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-submitDataUpdateType",
+            "valueCode": "incremental"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://datycs.com/chart",
+            "value": "HED_DEMO-20240212-00001"
+          }
+        ],
+        "status": "complete",
+        "type": "data-collection",
+        "measure": "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-exm130-example",
+        "subject": {
+          "reference": "Patient/22e4d180ebb7d5b6d7a214904a2f229ec997fbfcfd445587f299400f8b56ac9d"
+        },
+        "period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "evaluatedResource": [
+          {"reference": "Diagnostic/1122"}
+        ]
+      }
+    },
+    {
+      "chart id": "HED_DEMO-20240212-00003",
+      "data": {
+        "resourceType": "MeasureReport",
+        "meta": {
+          "source": "http://example.org/fhir/server",
+          "profile": ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm"]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-submitDataUpdateType",
+            "valueCode": "incremental"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://datycs.com/chart",
+            "value": "HED_DEMO-20240212-00001"
+          }
+        ],
+        "status": "complete",
+        "type": "data-collection",
+        "measure": "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-exm130-example",
+        "subject": {
+          "reference": "Patient/22e4d180ebb7d5b6d7a214904a2f229ec997fbfcfd445587f299400f8b56ac9d"
+        },
+        "period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "evaluatedResource": [
+          {"reference": "Diagnostic/1122"}
+        ]
+      }
+    },
+    {
+      "chart id": "HED_DEMO-20240212-00004",
+      "data": {
+        "resourceType": "MeasureReport",
+        "meta": {
+          "source": "http://example.org/fhir/server",
+          "profile": ["http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/datax-measurereport-deqm"]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-submitDataUpdateType",
+            "valueCode": "incremental"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://datycs.com/chart",
+            "value": "HED_DEMO-20240212-00001"
+          }
+        ],
+        "status": "complete",
+        "type": "data-collection",
+        "measure": "http://hl7.org/fhir/us/davinci-deqm/Measure/measure-exm130-example",
+        "subject": {
+          "reference": "Patient/22e4d180ebb7d5b6d7a214904a2f229ec997fbfcfd445587f299400f8b56ac9d"
+        },
+        "period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "evaluatedResource": [
+          {"reference": "Diagnostic/1122"}
+        ]
+      }
+    }
+  ]
+  
