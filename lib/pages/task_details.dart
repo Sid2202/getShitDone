@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:newapp/models/task.dart';
+import 'package:TaskSpace/models/task.dart';
 import 'package:flutter/material.dart';
 
 class TaskDetails extends StatefulWidget {
